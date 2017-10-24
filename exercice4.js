@@ -1,4 +1,4 @@
-// Fonction check qui renvoie les informations des variables du form html
+// Fonction display qui renvoie les informations des variables du form html
 function display(){
   //Recuperer les valeurs des inputs du form
   var nom =document.getElementById('nom').value;
