@@ -4,6 +4,10 @@ function display(){
   var nom =document.getElementById('nom').value;
   var prenom =document.getElementById('prenom').value;
   var ville=document.getElementById('ville').value;
-  // On affiche les valeurs du input saisie par utilisateur
-  alert('Nom : ' + nom + '\nPrénom : ' + prenom + '\nVille : ' + ville);
+  if(nom && prenom && ville && isNaN(nom)==true && isNaN(prenom) && isNaN(ville)){
+    // On affiche les valeurs du input saisie par utilisateur
+    alert('Nom : ' + nom + '\nPrénom : ' + prenom + '\nVille : ' + ville);
+  }else {
+    alert('Error');
+  }
 }
